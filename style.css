@@ -1,0 +1,253 @@
+/* --- 1. VARIABLES & SETUP --- */
+:root {
+    --primary-color: #8b0000; /* Rosso Sangue/Snakebite */
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --light-gray: #f4f4f4;
+    --medium-gray: #888888;
+    --dark-accent: #000000;
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --container-width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 2. HEADER & NAVIGATION --- */
+header {
+    padding: 60px 0 40px 0;
+    border-bottom: 2px solid var(--dark-accent);
+    margin-bottom: 50px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo a {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--dark-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* --- 3. EDITORIAL MANIFESTO --- */
+.editorial-intro {
+    max-width: 750px;
+    margin: 60px auto 40px auto;
+    text-align: center;
+}
+
+.lead-text {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--dark-accent);
+    margin-bottom: 25px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.manifesto-body p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* --- 4. FOUNDERS SECTION --- */
+.founders-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.founder-card {
+    text-align: center;
+    width: 200px;
+}
+
+.founder-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--light-gray);
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+}
+
+.founder-card:hover .founder-img {
+    filter: grayscale(0%);
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.founder-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.founder-card p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --- 5. DYNAMIC ARTICLE CARDS (JS Generated) --- */
+#content-list {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 50px;
+    padding: 10px 0 10px 25px;
+    border-left: 1px solid #eee;
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-left: 1px solid var(--primary-color);
+}
+
+.meta {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--medium-gray);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* --- 6. UTILITIES & SEPARATORS --- */
+.separator {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    margin: 60px 0;
+}
+
+/* --- 7. FOOTER --- */
+footer {
+    margin-top: 100px;
+    padding: 60px 0;
+    background: var(--dark-accent);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* --- 8. MOBILE RESPONSIVE --- */
+.menu-toggle {
+    display: none;
+}
+@media (min-width: 601px) {
+    .nav-links {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        display: none; /* Managed by JS toggle */
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin: 20px auto 0 auto;
+        background: none;
+        border: 1px solid var(--dark-accent);
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+
+    .logo a {
+        font-size: 2rem;
+    }
+
+    .founders-section {
+        gap: 30px;
+    }
+}
