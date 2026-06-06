@@ -251,3 +251,54 @@ footer p {
         gap: 30px;
     }
 }
+/* --- 3b. POST IMAGES & CAPTIONS (Added for Long-form Articles) --- */
+.post .manifesto-body figure {
+    margin: 45px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.post .manifesto-body figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px; /* Angoli netti in linea con l'estetica Snakebite */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Ombra leggerissima e sofisticata */
+    transition: transform 0.3s ease;
+}
+
+/* Effetto minimale al passaggio del mouse sull'immagine */
+.post .manifesto-body figure:hover img {
+    transform: translateY(-2px);
+}
+
+/* Stile per la didascalia (coerente con la classe .meta e il font Inter) */
+.post .manifesto-body figcaption {
+    margin-top: 15px;
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--medium-gray);
+    font-style: italic;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Variante Full-Width: rompe leggermente i 900px del container per dare dinamismo su desktop */
+@media (min-width: 1000px) {
+    .post .manifesto-body figure.full-width {
+        margin-left: -50px;
+        margin-right: -50px;
+        width: calc(100% + 100px);
+    }
+}
+
+@media (max-width: 999px) {
+    .post .manifesto-body figure.full-width {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
