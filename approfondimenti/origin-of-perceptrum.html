@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptrum Duo | The Origin</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- BRANDING & STYLING TUNING --- */
+        :root {
+            --perceptrum-yellow: #d4af37; /* Giallo Oro artistico */
+            --perceptrum-yellow-hover: #b89528;
+            --snakebite-red: #8b0000; /* Rosso Scuro coerente col brand */
+            --dark-text: #1a1a1a;
+            --light-bg: #ffffff;
+            --soft-gray: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.7;
+        }
+
+        /* Contenitore specifico per dare respiro al testo */
+        .story-container {
+            max-width: 750px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        /* --- TIPOGRAFIA --- */
+        .origin-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark-text);
+            border-left: 4px solid var(--perceptrum-yellow);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .origin-title { font-size: 2rem; }
+        }
+
+        .section-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--snakebite-red); /* Tocco rosso per la sotto-intestazione */
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+            color: #333333;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .story-text em {
+            color: var(--snakebite-red);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        /* --- LISTA BIOGRAFICA --- */
+        .biography-list {
+            list-style: none;
+            padding: 0;
+            margin: 35px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .biography-list li {
+            font-size: 1.05rem;
+            color: #333333;
+            padding: 20px;
+            background-color: var(--soft-gray);
+            border-radius: 2px;
+            border-left: 3px solid var(--perceptrum-yellow);
+        }
+
+        .biography-list strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--dark-text);
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* --- PORTFOLIO LINKS --- */
+        .portfolio-link {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--perceptrum-yellow);
+            text-decoration: none;
+            margin-left: 8px;
+            border-bottom: 1px dashed var(--perceptrum-yellow);
+            transition: all 0.2s ease;
+        }
+
+        .portfolio-link:hover {
+            color: var(--perceptrum-yellow-hover);
+            border-bottom-style: solid;
+        }
+        .useful-links-section {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px dashed #ccc;
+        }
+
+        .useful-links-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--dark-text);
+            margin-bottom: 20px;
+        }
+
+        .links-grid {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links-grid li {
+            display: flex;
+            align-items: center;
+        }
+
+        .links-grid .bullet {
+            color: var(--perceptrum-yellow);
+            margin-right: 10px;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .external-resource-link {
+            font-size: 1.05rem;
+            color: var(--dark-text);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid var(--snakebite-red);
+            transition: all 0.2s ease;
+        }
+
+        .external-resource-link:hover {
+            color: var(--snakebite-red);
+            background-color: var(--soft-gray);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ARTICOLO / STORIA DI PERCEPTRUM -->
+    <main class="story-container">
+        <article>
+            
+            <h1 class="origin-title">
+                The Origin of Perceptrum
+            </h1>
+
+            <p class="story-text">
+                The story of Dora Motèque and Luciano Ciamarone is a convergence of visual storytelling, physics, and music. Together, they founded Perceptrum (also known as Perceptrum²), an artistic duo dedicated to redefining the traditional boundaries of artistic experience. Instead of treating painting as a static object observed from a distance, they developed the idea of a <em>surface of relation</em>, an interactive medium that listens, remembers, and responds through touch and sound.
+            </p>
+
+            <h2 class="section-subtitle">
+                The Convergence of Two Worlds
+            </h2>
+
+            <p class="story-text">
+                Before forming Perceptrum, Dora and Luciano came from distinct but complementary creative trajectories.
+            </p>
+
+            <ul class="biography-list">
+                <li>
+                    <strong>Dora Motèque</strong> brought a foundation in human-centered space, narrative, and visual identity. Her work spans symbolic video art exploring identity (such as <em>Paradoxical</em>, 2019) and architectural stage design studies like <em>Turandot</em> (2017), where she investigated how space shapes perception and emotion.
+                    <a href="https://luciamarock.github.io/PerceptrumDuo/old_portfolios.html#dora" 
+                       class="portfolio-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        [portfolio]
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Luciano Ciamarone</strong> works at the intersection of physics and sound. With a background in physics and music, his work spans signal processing, real-time audio analysis, and physics-inspired sonification systems.
+                    <a href="https://luciamarock.github.io/PerceptrumDuo/old_portfolios.html#luciano" 
+                       class="portfolio-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        [portfolio]
+                    </a>
+                </li>
+            </ul>
+
+            <p class="story-text">
+                When their paths crossed, they discovered a shared philosophy: in an increasingly disembodied digital world, physical touch remains a fundamental cultural act. This idea became the foundation of Perceptrum.
+            </p>
+<section class="useful-links-section">
+                <h4 class="useful-links-title">Useful Links & Resources</h4>
+                <ul class="links-grid">
+                    <li>
+                        <span class="bullet">✦</span>
+                        <a href="https://www.perceptrum.net/" class="external-resource-link" target="_blank" rel="noopener noreferrer">
+                            Official Perceptrum Website
+                        </a>
+                    </li>
+                    <li>
+                        <span class="bullet">✦</span>
+                        <a href="https://www.perceptrum.net/manifesto/" class="external-resource-link" target="_blank" rel="noopener noreferrer">
+                            The Perceptrum Manifesto
+                        </a>
+                    </li>
+                    <li>
+                        <span class="bullet">✦</span>
+                        <a href="https://www.perceptrum.net/ontology/augmented-painting.html" class="external-resource-link" target="_blank" rel="noopener noreferrer">
+                            Augmented Painting Ontology
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
