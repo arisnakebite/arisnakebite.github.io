@@ -24,18 +24,48 @@
 
   <!-- Schema.org structured data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "DefinedTerm",
-    "name": "Augmented Painting",
-    "identifier": "Q137104541",
-    "description": "A class of Augmented Physical Objects where painting is transformed into an interactive, sensor-driven and computational system, distinct from Augmented Reality.",
-    "inDefinedTermSet": "Perceptrum Ontology",
-    "sameAs": [
-      "https://www.wikidata.org/wiki/Q137104541"
-    ]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://www.perceptrum.net/ontology/augmented-painting",
+      "name": "Augmented Painting",
+      "description": "A class of Augmented Physical Objects where a painted surface is a computational, sensing, and reactive system, marking an ontological transformation rather than a digital overlay.",
+      "sameAs": "https://www.wikidata.org/wiki/Q137104541",
+      "inDefinedTermSet": "https://www.perceptrum.net/ontology/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.perceptrum.net/ontology/augmented-painting#context",
+      "name": "Ontology of Augmented Painting",
+      "creator": {
+        "@type": "Organization",
+        "name": "Perceptrum²",
+        "sameAs": "https://www.wikidata.org/wiki/Q136547945"
+      },
+      "mentions": [
+        {
+          "@type": "CreativeWork",
+          "name": "Sounding Canvas",
+          "sameAs": "https://www.wikidata.org/wiki/Q136547884",
+          "url": "https://www.perceptrum.net/works/sounding-canvas.html"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Augmented Physical Objects",
+          "sameAs": "https://www.wikidata.org/wiki/Q138713278"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Augmented Musical Instruments",
+          "sameAs": "https://www.wikidata.org/wiki/Q138713305"
+        }
+      ]
+    }
+  ]
+}
+</script>
 
   <style>
     body {
