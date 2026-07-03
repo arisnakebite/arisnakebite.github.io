@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Visible Breath of Frequency | La Musica</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ESTENSIONI DELLO STILE PER I VIDEO E LE DOMANDE --- */
+        .interview-question {
+            font-family: var(--font-main);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .interview-answer {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        /* Contenitore responsive per gli embed di YouTube */
+        .video-responsive-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Ratio 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 25px 0;
+            border-radius: 2px;
+        }
+
+        .video-responsive-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Variante per gli YouTube Shorts (verticali 9:16) */
+        .video-shorts-container {
+            max-width: 340px;
+            margin: 25px auto;
+            position: relative;
+            padding-bottom: 177.77%; /* Ratio 9:16 */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            border-radius: 2px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .video-shorts-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .inline-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid var(--primary-color);
+            transition: color 0.2s;
+        }
+        
+        .inline-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="../index.html">Snakebite Edizioni</a></h1>
+            <nav id="main-nav">
+                <button class="menu-toggle" aria-label="Apri Menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Musica</a></li>
+                    <li><a href="../societa/index.html">Società</a></li>
+                    <li><a href="../world/index.html">World</a></li>
+                    <li><a href="../poesie/index.html">Poesie</a></li>
+                    <li><a href="../contatti/index.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <header class="post-header">
+                <span class="meta">Musica - Scritto da Pedro Senosa</span>
+                <h1>The Visible Breath of Frequency | Intervista al compositore Luciano Ciamarone</h1>
+            </header>
+
+            <section class="manifesto-body">
+              <p class="interview-question">CHI SEI E COSA FAI OGGI</p>
+                <p class="interview-answer">
+                    Allora oggi sono un uomo diviso! Per lavoro faccio il Software Developer ma come attività del cuore faccio parte di <a href="https://arisnakebite.github.io/approfondimenti/origin-of-perceptrum.html" class="inline-link" target="_blank" rel="noopener noreferrer">Perceptrum</a> che è un duo artistico che si occupa di <a href="https://arisnakebite.github.io/approfondimenti/augmented-painting.html" class="inline-link" target="_blank" rel="noopener noreferrer">Dipinti Aumentati</a>. I <a href="https://www.perceptrum.net/ontology/augmented-painting.html" class="inline-link" target="_blank" rel="noopener noreferrer">Dipinti Aumentati</a> sono una specie di equivalente in campo artistico degli <a href="https://luciamarock.github.io/Academics/ontology/#AugmentedMusicalInstrument" class="inline-link" target="_blank" rel="noopener noreferrer">Strumenti Aumentati</a> in ambito musicale. Dipinti Aumentati e Strumenti Aumentati sono entrambi "figli" di una categoria ontologica padre che si chiama <a href="https://luciamarock.github.io/Academics/ontology/classes/augmented-physical-object.html" class="inline-link" target="_blank" rel="noopener noreferrer">"Augmented Physical Objects"</a>.
+                </p>
+
+                <p class="interview-question">FACCI UN ESEMPIO CONCRETO DI OGNUNA DI QUESTE CATEGORIE</p>
+                <p class="interview-answer">
+                    Ok, partiamo dai "figli", un esempio concreto di Strumento Aumentato è il <a href="https://en.wikipedia.org/wiki/Feed-Drum" class="inline-link" target="_blank" rel="noopener noreferrer">Feed Drum</a> oppure la <a href="https://luciamarock.github.io/Projects/FeedGuitar.html" class="inline-link" target="_blank" rel="noopener noreferrer">Feed Guitar</a>. 
+                    Un esempio concreto di Dipinti Aumentati sono le nostre <a href="https://www.perceptrum.net/works/sounding-canvas.html" class="inline-link" target="_blank" rel="noopener noreferrer">Sounding Canvas</a> e al momento non ce ne sono altri perché con Perceptrum siamo i primi ad imbarcarci in questa avventura. 
+                    Un esempio concreto del loro "padre" invece non è facile da trovare perché è una sorta di astrazione di queste due categorie però mi verrebbe da citare un componente scenografico interattivo che ho costruito tanto tempo fa e che ho chiamato <a href="https://luciamarock.github.io/Projects/AccroccoSonic.html" class="inline-link" target="_blank" rel="noopener noreferrer">"Accrocco"</a> appunto perché non sapevo bene come definirlo.
+                </p>
+                
+                <p class="interview-question">NOI SIAMO GIA' ABITUATI ALLE DEFINIZIONI DI ARTE INTERATTIVA, PER ESEMPIO <a href="https://www.tate.org.uk/art/art-terms/i/interactive-art" class="inline-link" target="_blank" rel="noopener noreferrer">QUESTA</a> DI TATE O <a href="https://www.artsy.net/gene/interactive" class="inline-link" target="_blank" rel="noopener noreferrer">QUESTA</a> DI ARTSY; SIAMO ANCHE ABITUATI ALLE DEFINIZIONI DI ARTE PERFORMATIVA, AD ESEMPIO <a href="https://www.tate.org.uk/art/art-terms/p/performance-art" class="inline-link" target="_blank" rel="noopener noreferrer">QUESTA</a> DI TATE E <a href="https://www.artsy.net/gene/performance-art" class="inline-link" target="_blank" rel="noopener noreferrer">QUESTA</a> DI ARTSY; C'E' PERO' NELLA ESTETICA DI PERCEPTRUM ANCHE QUALCOSA DI RELAZIONALE E QUALCOSA DI SIMILE VIENE DEFINITA SEMPRE DA <a href="https://luciamarock.github.io/Projects/technicalities/feedback_ballet.html" class="inline-link" target="_blank" rel="noopener noreferrer">TATE QUI</a>, PUOI DIRCI QUALCOSA RIGUARDO IL VOSTRO CONCETTO DI RELAZIONE E DI COME SI COLLEGA AL CONCETTO PADRE DI OGGETTO FISICO AUMENTATO E SOPRATTUTTO A QUESTO ELEMENTO SCENOGRAFICO DI CUI PARLAVI ?</p>
+                <p class="interview-answer">
+                    Sì, la relazione è tutto per noi, pensiamo ad esempio che ciò che chiamiamo Coscienza e Intelligenza siano possibili solamente grazie alle relazioni con il nostro intorno. 
+                    Nei nostri lavori, inoltre, la relazione è anche vista come l'unica possibile via risolutiva della dicotomia uomo-macchina, nelle Sounding Canvas ad esempio uomo e macchina diventano co-creatori di una esperienza percettiva ed emozionale, da qui il nostro nome Perceptrum ad esempio. 
+                    Per quanto riguarda specificatamente il nostro oggetto interattivo di scena chiamato Accrocco, ebbene quello è esattamente un oggetto che incarna la relazione. 
+                    All'inizio infatti era stato pensato per essere una interfaccia di comunicazione tra una danzatrice ed il chitarrista di Feed Guitar, nel nostro progetto di danza interattiva l'Accrocco veniva usato e interagito dalla danzatrice per creare effetti sonori sulla Feed Guitar, una pagina dettagliata di questo progetto si può trovare .
+                </p>
+                
+                <p class="interview-question">OK ASPETTA QUI TI FERMO UN SECONDO PERCHE' GIA' CI STIAMO AVVICINANDO ALL'ARGOMENTO PRINCIPALE DI QUESTA NOSTRA CONVERSAZIONE CHE E' APPUNTO LA MUSICA CHE HAI COMPOSTO ED ESEGUITO PER THE VISIBLE BREATH OF FREQUENCY CHE E' IN REALTA' UNO SPETTACOLO DI DANZA. ESSO PERO' E' VENUTO MOLTO DOPO QUESTA PRIMA VOSTRA IDEA DI PROGETTO, GIUSTO ?</p>
+                <p class="interview-answer">
+                    Esatto, quest'ultimo spettacolo di danza è stato fatto con il <a href="https://www.perceptrum.net/works/sounding-stage.html" class="inline-link" target="_blank" rel="noopener noreferrer">Sounding Stage</a> che è una infrastruttura scenografica che eredita strettamente dalle nostre Sounding Canvas. 
+                    Qui la tecnologia utilizzata è completamente differente perché si avvale del "Capacitive Sensing", ci sono sostanzialmente sensori del tocco. Prima invece stavamo cercando di utilizzare l'Accrocco come mediatore dell'interazione e della musica.
+                    In realtà anche per le Sounding Canvas abbiamo cercato all'inizio di utilizzare l'Accrocco, dapprima avevamo messo degli altoparlanti dietro una tela:
+                </p>
+
+                <!-- EMBED PRIMO VIDEO: SHORTS (VERTICALE) -->
+                <div class="video-shorts-container">
+                    <iframe src="https://www.youtube.com/embed/24X-zdEgqs0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <p class="interview-answer">
+                    Poi abbiamo fatto suonare la tela usando un sistema esterno:
+                </p>
+
+                <!-- EMBED SECONDO VIDEO: SHORTS (VERTICALE) -->
+                <div class="video-shorts-container">
+                    <iframe src="https://www.youtube.com/embed/VvnGR3MhoZU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <p class="interview-answer">
+                    ed infine abbiamo sostituito quel sistema esterno con l'Accrocco:
+                </p>
+
+                <!-- EMBED TERZO VIDEO: ORIZZONTALE STANDARD -->
+                <div class="video-responsive-container">
+                    <iframe src="https://www.youtube.com/embed/OpBCzeYS114" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <p class="interview-answer">
+                    Non era male ma mia moglie voleva davvero creare qualcosa di più semplice ed intimo, voleva davvero che fosse tutto nel dipinto, un dipinto aumentato appunto.
+                </p>
+
+                <p class="interview-question">OK QUINDI A QUEL PUNTO AVETE PER LA SECONDA VOLTA SCARTATO L'IDEA DI FARE QUALCOSA CON L'ACCROCCO E DI CONCENTRARVI SU QUALCOSA DI PIU' INTUITIVO E RELAZIONALE. QUINDI IL VOSTRO SOUNDING STAGE CONSERVA LE CARATTERISTICHE INTIME DI UNA SOUNDING CANVAS SOLO CHE DIVENTA QUALCOSA DI AVVOLGENTE E CHE VIENE ABITATO DALLA DANZATRICE</p>
+                <p class="interview-answer">
+                    Esatto, è così.
+                </p>
+
+                <p class="interview-question">BELLISSIMO E CHIARISSIMO. PARLIAMO ADESSO FINALMENTE DELLA MUSICA CHE HAI COMPOSTO PER QUESTO SPETTACOLO E CHE PORTA LO STESSO NOME "THE VISIBLE BREATH OF FREQUENCY". COSA TI HA GUIDATO O ISPIRATO DURANTE LA COMPOSIZIONE DI QUESTO PEZZO ?</p>
+                <p class="interview-answer">
+                    Ok, allora, innanzitutto c'è da dire che lo spettacolo di danza utilizza molti più minuti di musica rispetto alla durata complessiva di "The Visible Breath of Frequency" in versione puramente musicale e questo perché lo spettacolo di danza prevede l'utilizzo di quattro zone sensibili, 2 per suoni di ambienza, una per improvvisazioni e l'altra per le canzoni, quindi la versione puramente musicale di "The Visible Breath of Frequency" non è altro che ciò che può venire fuori dalla zona sensibile numero 4 del Sounding Stage, quella delle canzoni. 
+                    Cosa mi ha ispirato, eh, qui entriamo in un territorio oscuro perché gli spunti e appunti musicali su cui mi sono basato per The Visible Breath of Frequency, li avevo raccolti durante un periodo terribile della mia vita, un periodo che va dal 2018 al 2021 e che riguarda avvenimenti accaduti in <a href="https://arisnakebite.github.io/world/the-lion-and-sun-revolution.html" class="inline-link" target="_blank" rel="noopener noreferrer">Iran</a> ed anche alla famiglia di mia moglie.
+                </p>
+
+                <p class="interview-question">OK SI, HAI ANCHE SCRITTO UN ARTICOLO PER NOI RIGUARDO QUEGLI AVVENIMENTI MA IMMAGINO CHE NON TI VADA DI PARLARE DELLE COSE PIU' PERSONALI, INOLTRE USCIREMMO UN PO' FUORI TEMA. QUINDI TI CHIEDO: COSA HA RAPPRESENTATO PER TE COMPORRE E REGISTRARE THE VISIBLE BREATH OF FREQUENCY ?</p>
+                <p class="interview-answer">
+                    Una sfida, prima di tutto. Erano anni che non registravo qualcosa, in più, dire che ero "fuori forma", è dire poco, molto poco. Inoltre non ho una DAW, ho registrato tutto con mezzi vecchi e di fortuna, infatti la qualità finale non è professionale. Mi interessava la composizione, solo la composizione, mi interessava dare vita ad un organismo coerente utilizzando gli spunti che avevo. Tutto qui. È stato un lavoro personale e curativo.
+                </p>
+
+                <p class="interview-question">CAPISCO, POSSO CAPIRLO; UN'ULTIMA COSA: QUALI SONO I TUOI PROSSIMI IMPEGNI MUSICALI, SU COSA STAI LAVORANDO O LAVORERAI ?</p>
+                <p class="interview-answer">
+                    Devo ancora fare la musica per le ultime Sounding Canvas della serie, la nostra prima serie di 12 pezzi; sto cercando di mettere insieme un framework musicale tutto mio dal quale generare musica, una specie di Max-Msp per intenderci, ma mio e ad uso personale. Per quanto riguarda la musica più "terrena", avrei 4 demo che mi piacerebbe registrare ma mi servono i musicisti e poi vogliamo creare altre performance con il nostro Sounding Stage, quindi direi che c'è un sacco di lavoro musicale da fare!
+                </p>
+
+            </section>
+
+            <footer class="post-footer" style="margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--light-gray);">
+                <a href="../index.html" class="back-link" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">
+                    ← Torna alla Home
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2013-2026 Snakebite Edizioni. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
