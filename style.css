@@ -345,42 +345,35 @@ blockquote {
     color: var(--medium-gray);
     font-style: italic;
 }
-/* Variante per gli YouTube Shorts corretta */
-.video-shorts-container {
-    max-width: 315px; /* Larghezza ideale per un video verticale in una colonna di testo */
-    margin: 30px auto;
-    position: relative;
-    padding-bottom: 140%; /* Rapporto proporzionale corretto per l'embed Shorts senza bande nere eccessive */
-    height: 0;
-    overflow: hidden;
-    background: #000;
-    border-radius: 2px;
-}
 
-.video-shorts-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
 /* Contenitore responsive per gli embed di YouTube Standard (Orizzontale 16:9) */
 .video-responsive-container {
     position: relative;
-    padding-bottom: 56.25%; /* Rapporto matematico perfetto per il formato 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Forza matematicamente la proporzione corretta */
     margin: 35px 0;
+    background: #000;
     border-radius: 2px;
 }
 
 .video-responsive-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Variante per gli YouTube Shorts Verticali (Rapporto 9:16 nativo calibrato) */
+.video-shorts-container {
+    width: 100%;
+    max-width: 320px; /* Larghezza ideale in linea con la colonna del testo */
+    aspect-ratio: 9 / 16; /* Costringe l'iframe a rimanere verticale */
+    margin: 40px auto; /* Centra lo Shorts lasciando respiro sopra e sotto */
+    background: #000;
+    border-radius: 2px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.video-shorts-container iframe {
     width: 100%;
     height: 100%;
     border: 0;
