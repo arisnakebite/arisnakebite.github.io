@@ -302,3 +302,46 @@ footer p {
         width: 100%;
     }
 }
+
+/* --- NUOVO STILE INTEGRATO PER L'INTERVISTA --- */
+.interview-question {
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    font-weight: 600; /* Sfrutta il peso 600 di Inter già caricato */
+    color: var(--dark-accent); /* Nero pieno, evita colori accesi per le domande */
+    margin-top: 35px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.interview-answer {
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    color: #444; /* Perfettamente identico a .manifesto-body p */
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Link in linea con l'estetica Snakebite (sottolineatura rossa elegante) */
+.inline-link {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color);
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.inline-link:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--dark-accent);
+}
+
+/* Blocco di citazione esterno (Tate, Artsy) riadattato */
+blockquote {
+    margin: 40px 0;
+    padding: 0 0 0 20px;
+    border-left: 2px solid var(--primary-color); /* Riga rossa laterale sottile */
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    color: var(--medium-gray);
+    font-style: italic;
+}
