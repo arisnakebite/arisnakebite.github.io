@@ -1,2 +1,2 @@
 # arisnakebite.github.io
-Edizioni Snakebite official website 
+Edizioni Snakebite official website
